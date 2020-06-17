@@ -11,6 +11,15 @@
   </head>
   <body style="background-color: lightblue;">
 
+    <h1>Posts thing</h1>
+    {% for post in posts %}
+      <div>
+        <p> published: {{ post.published_date}}</p>
+        <h2><a href = "">{{post.title}}</a></h2>
+        <p>{{post.text|linebreaksbr}}</p>
+      </div>
+    {% endfor %}
+
     <h2>Owain's Learning Website</h2>
     <p>This is a paragraph test.</p>
     <p>This is <b>another</b> paragraph test. This paragraph will <b><i>auto (italics too D:)</i></b> format itself on the webpage. COOL.</p>
