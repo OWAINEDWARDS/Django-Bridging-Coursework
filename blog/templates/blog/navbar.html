@@ -1,0 +1,19 @@
+{% load static %}
+<!<!DOCTYPE html>
+
+<head>
+  <title> Navbar </title>
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+<header>
+  <!-- <h1>Owain <span>Edwards</span></h1> -->
+  <nav>
+    <ul>
+      <li><a href="{% url 'homepage' %}">Home</a></li>
+      <li><a href="{% url 'post_list' %}">Posts</a></li>
+      <li><a href="#">Temp</a></li>
+    </ul>
+  </nav>
+</header>
