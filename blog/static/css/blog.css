@@ -1,17 +1,5 @@
-/* .page-header {
-  background-color: #B22222;
-  margin-top: 0;
-  padding: 1px 5px 5px 20px;
-} */
-
-/* .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-  color: #ffffff;
-  font-size: 15pt;
-  text-decoration: none;
-} */
-
 body{
-  background-color: #363030;
+    background-color: #1F2833;
 
 }
 
@@ -37,13 +25,6 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-/* .top-menu, .top-menu:hover, .top-menu:visited{
-  color: #ffffff;
-  float: right;
-  font-size: 25pt;
-  margin-right: 20px;
-} */
-
 .post {
   margin-bottom: 70px;
 
@@ -52,6 +33,14 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited{
   color: #ffffff;
 }
-p{
+
+.post p2{
+  font-size: 12px;
+  color: #ffffff;
+
+}
+
+/* a{
+  text-decoration: none;
   color: #ffffff;
 }
