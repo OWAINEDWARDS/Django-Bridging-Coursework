@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+  <title> Navbar </title>
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+<header>
+  <!-- <h1>Owain <span>Edwards</span></h1> -->
+  <nav>
+
+    <ul class="nav-list">
+      <li>
+        <a href="{% url 'homepage' %}" class="nav-link"> Home </a>
+      </li>
+      <li>
+        <a href="{% url 'post_list' %}" class="nav-link"> Blog Posts </a>
+      </li>
+      <li>
+        <a href="#Temp" class="nav-link"> Temp </a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <!-- <div class="bar"></div> -->
+
+
+  </nav>
+</header>

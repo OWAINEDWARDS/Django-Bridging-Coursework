@@ -13,24 +13,7 @@
   <body>
     <nav>
       <!-- <div class=circle></div> -->
-      <div class="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <nav class="top-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="{% url 'homepage' %}" class="nav-link"> Home </a>
-          </li>
-          <li>
-            <a href="{% url 'post_list' %}" class="nav-link"> Blog Posts </a>
-          </li>
-          <li>
-            <a href="#Temp" class="nav-link"> Temp </a>
-          </li>
-        </ul>
-      </nav>
+      {% include "../blog/navbar.html" %}
 
       <div class="Begin-Text">
         <h1>Owain Skitt</h1>
@@ -48,7 +31,7 @@
             <h1>About</h1>
             <h6>Myself</h6>
           </div>
-          <p>YOYOYOOYOYOYOOYOYOYYOOYOYOYOOYOYOYOYOOYOYOOYOYOYOOYOY</p>
+          <p>YOYOYOOYOYOYOOYOYOOYOY</p>
         </div>
         <div class="social-media">
           <ul class="nav-list">
