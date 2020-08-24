@@ -1,6 +1,74 @@
 {% load static %}
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="{% static 'css/base.css' %}">
-{% include 'blog/navbar.html' %}
-<!-- <h1>Hello Homepage</h1> -->
+<!doctype html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+
+  </head>
+  <body>
+    <nav>
+      <!-- <div class=circle></div> -->
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="{% url 'homepage' %}" class="nav-link"> Home </a>
+          </li>
+          <li>
+            <a href="{% url 'post_list' %}" class="nav-link"> Blog Posts </a>
+          </li>
+          <li>
+            <a href="#Temp" class="nav-link"> Temp </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="Begin-Text">
+        <h1>Owain Skitt</h1>
+        <h6>Student @ University Of Birmingham</h6>
+      </div>
+    </nav>
+
+    <section class="posts" id="posts">
+      <div class="container">
+        <div class="profile-img">
+          <!-- <img src="images/profile.jpeg"> -->
+        </div>
+        <div class="about-details">
+          <div class="about-heading">
+            <h1>About</h1>
+            <h6>Myself</h6>
+          </div>
+          <p>YOYOYOOYOYOYOOYOYOYYOOYOYOYOOYOYOYOYOOYOYOOYOYOYOOYOY</p>
+        </div>
+        <div class="social-media">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class=icon-link>
+                <i></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class=icon-link>
+                <i></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+    </section>
+
+  </body>
+
+</html>
