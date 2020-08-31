@@ -1,10 +1,14 @@
+*{
+  text-align: center;
+  align-items: center;
+}
 body{
     background-color: #1F2833;
 
 }
 
 .content {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   margin-top: 40px;
 }
 

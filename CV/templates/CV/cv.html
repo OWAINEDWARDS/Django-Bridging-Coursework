@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<div class = CV>
+{% for CVpost in cvposts %}
+
+  <div class = "contactInfo">
+
+    <h3>{{CVpost.homeAddress}}</h3>
+    <h3>{{CVpost.email}}</h3>
+    <h3>{{CVpost.contactNumber}}</h3>
+
+    </div>
+
+    <div class = "currentStatus">
+      <h1>Current Status</h1>
+      <h3>{{CVpost.status}}</h3>
+    </div>
+
+    <div class = "aboutMe">
+      <h1>About Me</h1>
+      <h3>{{CVpost.aboutMe}}</h3>
+    </div>
+
+{% endfor %}
+
+{% for q in qposts %}
+  <div class = "qualifications">
+    <h1>Qualifications</h5>
+    <h3>{{q.qualification}}</h6>
+  </div>
+
+{% endfor %}
+
+<h1>Projects</h5>
+
+{% for p in pposts %}
+<div class = "projects">
+  <h2>{{p.projectTitle}}</h3>
+  <h3>{{p.projectDescription}}</h3>
+</div>
+{% endfor %}
+  </div>

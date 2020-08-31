@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+
+  </head>
+  <body>
+    <nav>
+      <!-- <div class=circle></div> -->
+      {% include "blog/navbar.html" %}
+
+      <div class="Begin-Text">
+        <h1>Owain Edwards</h1>
+
+        {% include "CV/cv.html" %}
+
+      </div>
+    </nav>
+
+
+  </body>
+
+</html>
